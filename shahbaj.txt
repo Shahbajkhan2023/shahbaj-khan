@@ -1,0 +1,167 @@
+         ARRAY EXAMPLE 
+
+
+#include<iostream>
+using namespace std ;
+
+int main() {
+    char vowel[5]{'a','b','c','d','e'};
+    cout << vowel[0] << endl;
+    cout << vowel[1] << endl;
+    cout << vowel[2] << endl;
+    cout << vowel[3] << endl;
+    cout << vowel[4] ;
+}
+OUTPUT -a
+        b
+        c
+        d
+        e
+
+
+ARRAY VALUE IS CHANGE 
+
+#include<iostream>
+using namespace std ;
+
+int main() {
+    char vowel[5]{'a','b','c','d','e'};
+    cout << vowel[0] << endl;
+    cout << vowel[1] << endl;
+    cout << vowel[2] << endl;
+    cout << vowel[3] << endl;
+    cout << vowel[4] << endl;
+
+   cout << "=============CHANGE IN VOWEL[2]==============="<< endl;
+    vowel[2] ='e';
+    cout << vowel[0] << endl;
+    cout << vowel[1] << endl;
+    cout << vowel[2] << endl;
+    cout << vowel[3] << endl;
+    cout << vowel[4] ;
+
+}
+
+OUTPUT- a
+        b
+        c
+        d
+        e
+========CHANGE IN VOWEL========
+        a
+        b
+        e
+        d
+        e
+  
+
+
+
+
+#include<iostream>
+using namespace std ;
+
+int main() {
+    double decimal_value[5]{2.3,43.3,32.4,23.4,24.4};
+    cout << decimal_value[0] <<endl;
+    cout << decimal_value[1] <<endl;
+    cout << decimal_value[2] <<endl;
+    cout << decimal_value[3] <<endl;
+    cout << decimal_value[4] <<endl;
+    
+    cout << decimal_value;
+
+
+}
+OUTPUT-2.3 
+43.3
+32.4
+23.4
+24.4
+0x61fee8
+
+
+#include<iostream>
+#include<vector>
+using namespace std ;
+
+int main() {
+    //DEclaration of vector
+    int name[]{};          // see care fully
+    name[]={1,2,3,4,5}; // error throw aesa syntax galat hai array me
+
+
+======================================================
+vector
+
+#include<iostream>
+#include<vector>
+using namespace std ;
+
+int main() {
+    //Declaration of vector
+    
+    
+    vector <int> vowel(5);
+    vector <char> consonent(3);
+    vector <float> decimal_value(3) ; //see carefully
+    decimal_value = { 2.2, 2.3, 3.3 };
+    cout << decimal_value[0] << endl;
+    cout << decimal_value[1] << endl;
+    cout << decimal_value[2] << endl;
+
+
+
+
+====
+vector intialisation
+
+
+    vector <int> number {1,2,3,4,5};
+    vector <float> decimal_number{1.2, 2.3, 3.3};
+    vector <string> name {"shahbaj", "tofik"};
+    vector <char> vowel {'a', 'e', 'i', 'o','u'};
+
+
+
+    cout << name[0];
+
+OUTPUT    shahbaj
+
+
+
+====
+ vector <int> number {1,2,3,4,5};
+    vector <float> decimal_number{1.2, 2.3, 3.3};
+    vector <string> name(2){"shahbaj", "tofik"};// error hai
+    vector <char> vowel {'a', 'e', 'i', 'o','u'};
+
+
+
+    cout << name[0]<< endl;
+    cout << name[1]<< endl;
+    cout << name[2]<< endl;
+
+output
+
+hello.cpp: In function 'int main()':
+hello.cpp:20:29: error: expected ',' or ';' before '{' token
+     vector <string> name(2) {"shahbaj", "tofik"};
+
+
+
+===================
+
+    cout << "counter :" << counter << endl; //10
+    result = counter++ + 10;
+    cout << "counter :" << counter << endl;//11
+    cout << "result :" << result << endl;//20 // see it carefully.
+
+
+OUTPUT-counter :10
+counter :11
+result :20
+
+
+
+
